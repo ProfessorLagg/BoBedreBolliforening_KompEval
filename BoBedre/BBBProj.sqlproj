@@ -47,6 +47,7 @@
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <TreatTSqlWarningsAsErrors>True</TreatTSqlWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
@@ -67,5 +68,8 @@
     <Build Include="Vaskerier.sql" />
     <Build Include="Maskiner.sql" />
     <Build Include="Bookinger.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="AddData.sql" />
   </ItemGroup>
 </Project>
