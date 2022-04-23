@@ -59,17 +59,27 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="Procedures" />
+    <Folder Include="Views" />
   </ItemGroup>
   <ItemGroup>
     <None Include="EngineQuery.sql" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Brugere.sql" />
-    <Build Include="Vaskerier.sql" />
-    <Build Include="Maskiner.sql" />
-    <Build Include="Bookinger.sql" />
+    <Build Include="Tables\Bookinger.sql" />
+    <Build Include="Tables\Brugere.sql" />
+    <Build Include="Procedures\BookTid.sql" />
+    <Build Include="Views\BookView.sql" />
+    <Build Include="Views\gmail.sql" />
+    <Build Include="Views\MaskineTilVaskeri.sql" />
+    <Build Include="Views\BookingerPerMaskine.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="AddData.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Maskiner.sql" />
+    <Build Include="Tables\Vaskerier.sql" />
   </ItemGroup>
 </Project>

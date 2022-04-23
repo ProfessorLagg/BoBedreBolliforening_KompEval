@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Brugere]
 (
 	ID int IDENTITY(1,1) PRIMARY KEY NOT NULL,
-	Navn Nvarchar(50) NOT NULL,
+	BrugerNavn Nvarchar(50) NOT NULL,
 	EMAIL Nvarchar(50) NOT NULL UNIQUE,
 	Pass Nvarchar(50) NOT NULL, 
 	Konto DECIMAL(19,4) DEFAULT 0 NOT NULL,
