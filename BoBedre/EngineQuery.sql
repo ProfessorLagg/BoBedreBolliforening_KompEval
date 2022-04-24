@@ -1,4 +1,5 @@
-﻿IF DB_ID('BBB') IS NULL
+﻿USE [master]
+IF DB_ID('BBB') IS NULL
 BEGIN
 	CREATE DATABASE BBB
 	print 'Databse BBB created'

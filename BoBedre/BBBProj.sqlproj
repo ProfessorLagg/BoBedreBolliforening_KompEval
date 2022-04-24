@@ -69,11 +69,12 @@
   <ItemGroup>
     <Build Include="Tables\Bookinger.sql" />
     <Build Include="Tables\Brugere.sql" />
-    <Build Include="Procedures\BookTid.sql" />
+    <Build Include="Procedures\BookTid2.sql" />
     <Build Include="Views\BookView.sql" />
     <Build Include="Views\gmail.sql" />
     <Build Include="Views\MaskineTilVaskeri.sql" />
     <Build Include="Views\BookingerPerMaskine.sql" />
+    <None Include="Procedures\BookTid.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="AddData.sql" />
