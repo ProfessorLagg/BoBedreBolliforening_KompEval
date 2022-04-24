@@ -41,20 +41,13 @@ BEGIN
 	END
 --Action
 	IF (@BookMulig > 0)
-
 	BEGIN
-	print 'Maskine booket'
 	UPDATE Brugere 
 	SET KONTO = (@kontanter - @pris)
 	WHERE ID = @bruger;
 	INSERT INTO Bookinger(Tidspunkt,Bruger,Maskine)
 	VALUES(@tid,@bruger,@maskine);
 	END
-
-	ELSE
-	BEGIN
-	Print 'Kunne ikke Booke'
-	END
 END
 	
-GO;
+RETURN @BookMulig;

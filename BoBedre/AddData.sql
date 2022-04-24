@@ -43,8 +43,6 @@ GO
 
 DECLARE @idag DATETIME;
 SET @Idag = (DATETIMEFROMPARTS(YEAR(GETDATE()), MONTH(GETDATE()), DAY(GETDATE()), 12, 0 ,0 ,0));
---print @Idag;
---'20222304 12:00:00'
 EXEC BookTid2 @tid = @Idag, @bruger = 4, @maskine = 2;
 GO
 
