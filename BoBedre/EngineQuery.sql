@@ -1,11 +1,10 @@
-﻿USE [master]
-IF DB_ID('BBB') IS NULL
+﻿IF DB_ID('BBB') IS NULL
 BEGIN
 	CREATE DATABASE BBB
-	print 'Databse BBB created'
+	print 'Pre-Deploy Created the Database'
 END
 
 ELSE
 BEGIN
-print 'Databse BBB found'
+print 'Pre-Deploy found an existing database'
 END

@@ -64,7 +64,7 @@
     <Folder Include="Views" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="EngineQuery.sql" />
+    <PreDeploy Include="EngineQuery.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Bookinger.sql" />
